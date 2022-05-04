@@ -1,7 +1,7 @@
 # WikiCorpus 
 
 ## Project Description
-Our code makes a wikipedia corpus based on an existing article and a keywword of interest. 
+Our code makes a wikipedia corpus based a specific term.
 
 1/ It first selects all the wikipedia articles that respects the defined criteria
 2/ It scraps information for all these articles
@@ -10,7 +10,7 @@ The output is dataframe containing all the selected wikipedia articles and basic
 
 ### How is an article selected ?
 
-Let's imagine you are interested in the article "Wikipedia culture". The code will go through all the articles of the wikipedia "free search" making a first selection.
+Let's imagine you are interested in "Wikipedia culture". The code will go through all the articles of the wikipedia "free search" making a first selection.
 To specify this corpus, a word of interest should be added, for example "Wikipedia".  Within the free search articles, this will only select the articles containing the keyword in their title or one of their subtitles.
 The final list is making the corpus.
 
@@ -22,7 +22,9 @@ Finally we get :
 The name of the article, its url , a count a for the references from XTools, a count of the articles with our code, the number of scientific journal citations, a Sci-count, the page protection, the page lenght (in Bytes), the date of birth, the creator, the total number of edits, the recent edits and some formated dates.
 
 #### Sci-score ?
-Describe the calculation of the sci-score
+One of the basic information of our dataframe is a sciscore. This score between 0 and 1 is the ratio of scientific papers other the total number of references. To do so, we count the total number of doi, pmid and pmc. If all the papers collected by this method are peer-reviewed scientific papers, not all scientific references have a doi, a pmid or a pmc, mostly due to bad citation formatting. As such, the this score is only an estimate. 
+A score close to 1 means a higly scientific based article.
+A score close to 0 means a low scientific based article.
 
 ## How to Install and Run the Project
 
