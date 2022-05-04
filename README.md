@@ -3,8 +3,8 @@
 ## Project Description
 Our code makes a wikipedia corpus based a specific term.
 
-1/ It first selects all the wikipedia articles that respects the defined criteria
-2/ It scraps information for all these articles
+1. It first selects all the wikipedia articles that respects the defined criteria
+2. It scraps information for all these articles
 
 The output is dataframe containing all the selected wikipedia articles and basics information for these articles.
 
