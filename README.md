@@ -1,9 +1,5 @@
 # WikiCorpus 
 
-[Project Description] ()
-[How to Install and Run the Project] ()
-[How to Use the Project] ()
-
 ## Project Description
 Our code makes a wikipedia corpus based on an existing article and a keywword of interest. 
 
