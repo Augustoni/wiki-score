@@ -29,9 +29,12 @@ A score close to 0 means a low scientific based article.
 ## How to Install and Run the Project
 
 ### Installation
-To run our project, make sure you have installed the following : [setuptools](https://pypi.org/project/setuptools/), [pywikibot](https://github.com/wikimedia/pywikibot#readme), [mwparserfromhell](https://mwparserfromhell.readthedocs.io/en/latest/), [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/install/), [scipy](https://scipy.org/install/), [nltk](https://www.nltk.org/install.html), [tqdm](https://tqdm.github.io/), [wikipedia](https://pypi.org/project/wikipedia/), [pyqt5](https://pypi.org/project/PyQt5/), [pyqtwebengine](https://pypi.org/project/PyQtWebEngine/), [pathlib](https://docs.python.org/3/library/pathlib.html), [ruamel-yaml](https://pypi.org/project/ruamel.yaml/)
+To run our project, make sure you have installed the following : [setuptools](https://pypi.org/project/setuptools/), [pywikibot](https://github.com/wikimedia/pywikibot#readme), [mwparserfromhell](https://mwparserfromhell.readthedocs.io/en/latest/), [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/install/), [scipy](https://scipy.org/install/), [nltk](https://www.nltk.org/install.html), [tqdm](https://tqdm.github.io/), [wikipedia](https://pypi.org/project/wikipedia/), [pyqt5](https://pypi.org/project/PyQt5/), [pyqtwebengine](https://pypi.org/project/PyQtWebEngine/), [pathlib](https://docs.python.org/3/library/pathlib.html), [ruamel-yaml](https://pypi.org/project/ruamel.yaml/), [lxml](https://lxml.de/installation.html), [seaborn](https://seaborn.pydata.org/)
 
 All can be installed using pip : 
-mettre la ligne de code
+
+```
+!pip install wikipedia setuptools pywikibot mwparserfromhell pandas numpy scipy nltk tqdm seaborn pyqt5 pyqtwebengine ruamel-yaml lxml
+```
 
 ## How to Use the Project
