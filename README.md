@@ -1,7 +1,7 @@
 # WikiCorpus 
 
 ## Project Description
-Our code makes a wikipedia corpus based a specific term.
+Our code makes a wikipedia corpus based on a specific term.
 
 1. It first selects all the wikipedia articles that respects the defined criteria
 2. It scraps information for all these articles
