@@ -38,3 +38,6 @@ All can be installed using pip :
 ```
 
 ## How to Use the Project
+
+![image](https://user-images.githubusercontent.com/60670025/167416548-4a2ee4f1-d15b-4ed6-b877-708876ffaa77.png)
+
