@@ -29,7 +29,7 @@ A score close to 0 means a low scientific based article.
 ## How to Install and Run the Project
 
 ### Installation
-To run our project, make sure you have installed the following : [setuptools](https://pypi.org/project/setuptools/), [pywikibot](https://github.com/wikimedia/pywikibot#readme), [mwparserfromhell](https://mwparserfromhell.readthedocs.io/en/latest/), [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/install/), [scipy](https://scipy.org/install/), [nltk](https://www.nltk.org/install.html), [tqdm](https://tqdm.github.io/), [wikipedia](https://pypi.org/project/wikipedia/), [pyqt5](https://pypi.org/project/PyQt5/), [pyqtwebengine](https://pypi.org/project/PyQtWebEngine/), [pathlib](https://docs.python.org/3/library/pathlib.html), [ruamel-yaml](https://pypi.org/project/ruamel.yaml/), [lxml](https://lxml.de/installation.html), [seaborn](https://seaborn.pydata.org/)
+To run our project, make sure you have installed the following : [setuptools](https://pypi.org/project/setuptools/), [pywikibot](https://github.com/wikimedia/pywikibot#readme), [mwparserfromhell](https://mwparserfromhell.readthedocs.io/en/latest/), [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/install/), [scipy](https://scipy.org/install/), [nltk](https://www.nltk.org/install.html), [tqdm](https://tqdm.github.io/), [wikipedia](https://pypi.org/project/wikipedia/), [pyqt5](https://pypi.org/project/PyQt5/), [pyqtwebengine](https://pypi.org/project/PyQtWebEngine/), [pathlib](https://docs.python.org/3/library/pathlib.html), [ruamel-yaml](https://pypi.org/project/ruamel.yaml/), [lxml](https://lxml.de/installation.html) and [seaborn](https://seaborn.pydata.org/)
 
 All can be installed using pip : 
 
@@ -38,6 +38,13 @@ All can be installed using pip :
 ```
 
 ## How to Use the Project
-
+Our method for delimiting our corpus is to do a wikipedia search of the principal article in our case "Effects of climate change" we want to scrap then to find the other articles we defined a keyword  in our example "Climate change" and if the keyword is in the title or the section, subsection or subsubsection. In our program the first arguments of our function correspond to the name of the main article, the second argument is the number of article of the wiki search that are going to be analyzed (5000 is the maximum), the third argument is the keyword if the keyword is either in the title, section, subsection or subsubsection then the article will be selected by our function.
+To launch the corpus selection for your article you just need to replace "Effects of climate change"  by your main article and "Climate change" with the keywords for your corpus.
 ![image](https://user-images.githubusercontent.com/60670025/167416548-4a2ee4f1-d15b-4ed6-b877-708876ffaa77.png)
+This function usually last 1h to 2h it's normal.
+
+To launch the function creation of the dataframe you need in argument a list of the title of the article of the corpus, in second argument you need the keyword explained before that selects the  sections. If you want to scrap the wikicode of only the section containing the keyword if the keyword is not in the title then remove the ''' ''' shown in the picture: 
+![image](https://user-images.githubusercontent.com/60670025/167449184-7e5fcb83-3ba2-4abd-89cb-37e8101f1e49.png)
+Remove also the ''' ''' and comment the line page_text=page.text if you want the more precise wikicode.
+![image](https://user-images.githubusercontent.com/60670025/167449226-4967675f-fa0f-42dd-b3cd-967846f0e017.png)
 
