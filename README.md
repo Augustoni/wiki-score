@@ -19,7 +19,7 @@ The final list is making the corpus.
 For each article, some informations from the "page information" are scrapped. We also scrap informations from the main page and from the "page statistics" (Xtools).
 Using these scraped data, we also apply some bascis functions for instance to calculate the Sci-score (cf Sci-score paragraph).
 Finally we get :
-The name of the article, its url , a count a for the references from XTools, a count of the articles with our code, the number of scientific journal citations, a Sci-count, the page protection, the page lenght (in Bytes), the date of birth, the creator, the total number of edits, the recent edits and some formated dates.
+The name of the article, its url , a count of the article's references with our code, the number of scientific journal citations, a Sci-count, the page protection, the page length, the date of birth, the creator, the total number of edits, the recent edits and some formated dates.
 
 #### Sci-score ?
 One of the basic information of our dataframe is a sciscore. This score between 0 and 1 is the ratio of scientific papers other the total number of references. To do so, we count the total number of doi, pmid and pmc. If all the papers collected by this method are peer-reviewed scientific papers, not all scientific references have a doi, a pmid or a pmc, mostly due to bad citation formatting. As such, the this score is only an estimate. 
