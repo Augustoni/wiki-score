@@ -11,7 +11,7 @@ The output is dataframe containing all the selected wikipedia articles and basic
 ### How is an article selected ?
 
 Let's imagine you are interested in "Wikipedia culture". The code will go through all the articles of the wikipedia "free search" making a first selection.
-To specify this corpus, a word of interest should be added, for example "Wikipedia".  Within the free search articles, this will only select the articles containing the keyword in their title or one of their subtitles.
+To specify this corpus, a word of interest should be added, for example "Wikipedia".  Within the free search articles, this will only select the articles containing the keyword in their title or the title of a section, subsection or subsubsection
 The final list is making the corpus.
 
 ### Which information are scraped ?
@@ -36,15 +36,30 @@ All can be installed using pip :
 ```
 !pip install wikipedia setuptools pywikibot mwparserfromhell pandas numpy scipy nltk tqdm seaborn pyqt5 pyqtwebengine ruamel-yaml lxml
 ```
+### Run the Project
+The project is contained in a .ipynb file which corresponds to a python notebook file. The code is designed to be run using the cells' logic of a notebook. [Jupyter](https://jupyter.org/) is an example of a free notebook you can use.
 
 ## How to Use the Project
-Our method for delimiting our corpus is to do a wikipedia search of the principal article in our case "Effects of climate change" we want to scrap then to find the other articles we defined a keyword  in our example "Climate change" and if the keyword is in the title or the section, subsection or subsubsection. In our program the first arguments of our function correspond to the name of the main article, the second argument is the number of article of the wiki search that are going to be analyzed (5000 is the maximum), the third argument is the keyword if the keyword is either in the title, section, subsection or subsubsection then the article will be selected by our function.
-To launch the corpus selection for your article you just need to replace "Effects of climate change"  by your main article and "Climate change" with the keywords for your corpus.
-![image](https://user-images.githubusercontent.com/60670025/167416548-4a2ee4f1-d15b-4ed6-b877-708876ffaa77.png)
-This function usually last 1h to 2h it's normal.
 
-To launch the function creation of the dataframe you need in argument a list of the title of the article of the corpus, in second argument you need the keyword explained before that selects the  sections. If you want to scrap the wikicode of only the section containing the keyword if the keyword is not in the title then remove the ''' ''' shown in the picture: 
+### Corpus Selection 
+To launch the corpus selection for your article, you need to use your arguments for the function "corpus_selection".
+In our function "corpus selection:
+1. The first argument of our function correspond to the name of the main article.
+2. The second argument is the number of article that the wiki search will analyze (5000 is the maximum).
+3. The third argument is the keyword that will be searched in the main titles and the titles of sections, subsections or subsubsections.
+
+In other words, you need to replace "Effects of climate change"  by your main article and "Climate change" with the keywords for your corpus.
+
+![image](https://user-images.githubusercontent.com/60670025/167416548-4a2ee4f1-d15b-4ed6-b877-708876ffaa77.png)
+
+This function usually lasts 1h to 2h, so leave your computer on and grab a cup of coffee.
+
+### Possibilities to fine-tune the code
+By default, our code is scrapping the whole text for each article. This means that the information on the references are concerning the whole article. However, for the article of the corpus that do not contain the keyword in their main title, the whole article may not be relevant of what you are studying. As so, if you only want to scrap the references of the section whose title contains your keyword, remove the ''' ''' shown in the picture: 
+
 ![image](https://user-images.githubusercontent.com/60670025/167449184-7e5fcb83-3ba2-4abd-89cb-37e8101f1e49.png)
-Remove also the ''' ''' and comment the line page_text=page.text if you want the more precise wikicode.
+
+You also need to remove the ''' ''' and the "line page_text=page.text" if you want the more precise wikicode. Use "#" to comment the line, inactivating it without fully loosing it.
+
 ![image](https://user-images.githubusercontent.com/60670025/167449226-4967675f-fa0f-42dd-b3cd-967846f0e017.png)
 
