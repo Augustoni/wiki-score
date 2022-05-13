@@ -16,7 +16,7 @@ The final list is making the corpus.
 ## Which information are scraped ?
 
 For each article, some informations from the "page information" are scrapped. We also scrap informations from the main page and from the "page statistics" (Xtools).
-Using these scraped data, we also apply some basics functions for instance to calculate the [Sci-score](https://github.com/Augustoni/wiki-score/edit/main/README.md#sci-score-).
+Using these scraped data, we also apply some basics functions for instance to calculate the [Sci-score](https://github.com/Augustoni/wiki-score/blob/main/README.md#sci-score).
 Finally we get :
 The name of the article, its url , a count of the article's references with our code, the number of scientific journal citations, a Sci-count, the page protection, the page length, the date of birth, the creator, the total number of edits, the recent edits and some formated dates.
 
