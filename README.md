@@ -1,5 +1,7 @@
 # Project Description
-Our code makes a wikipedia corpus based on a term of interest.
+This tool is a part of a [broader project](https://projects.learningplanetinstitute.org/projects/nnEVGw73/des) of using wikipedia to analize history of contemporary science.
+
+Our code makes a wikipedia corpus based on a term of interest. 
 
 1. It first selects all the wikipedia articles that respects the defined criteria
 2. It scraps information for all these articles
