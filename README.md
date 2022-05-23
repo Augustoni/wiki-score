@@ -41,6 +41,8 @@ All can be installed using pip :
 The project is contained in a .ipynb file which corresponds to a python notebook file. The code is designed to be run using the cells' logic of a notebook. [Jupyter](https://jupyter.org/) is an example of a free notebook you can use.
 To create the corpus first launch *corpus creation and name of journal analysis* notebook. Then to compare corpora you can launch the *poster figures* notebook. 
 If you want to have the history on one article using wikicode manually found you can look at the branch history.
+The *wikipediaAnalysishistory* notebook is made based on Leo Blondel code that you can find in this gitlab: https://gitlab.com/xqua/wikipedia-data-collector/-/tree/main 
+This notebook is a modification of the notebook *WikipediaAnalysisDemo* with the extraction of the name of the citation to make it work yu firstly need to run the code on Leo Blondel's Github.
 
 # How to Use the Project
 
@@ -71,3 +73,7 @@ The code also plots some figures that describe the corpus. The corresponding cel
 1. A pie chart of the creators
 2. A yearly timeline of the artices date of birth
 3. Barplots of the most cited references
+
+#Acknowledgements
+
+A huge thanks to Omer Benjakob, Rona Aviram which method we applied and who guided us throughout this project. For the code part a huge thanks to Leo Blondel and	Jean-Marc Sevin because without them we wouldn't be able to have done this.
