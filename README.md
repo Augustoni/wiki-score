@@ -74,6 +74,6 @@ The code also plots some figures that describe the corpus. The corresponding cel
 2. A yearly timeline of the artices date of birth
 3. Barplots of the most cited references
 
-#Acknowledgements
+# Acknowledgements
 
 A huge thanks to Omer Benjakob, Rona Aviram which method we applied and who guided us throughout this project. For the code part a huge thanks to Leo Blondel and	Jean-Marc Sevin because without them we wouldn't be able to have done this.
