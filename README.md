@@ -39,6 +39,7 @@ All can be installed using pip :
 ```
 ## Run the Project
 The project is contained in a .ipynb file which corresponds to a python notebook file. The code is designed to be run using the cells' logic of a notebook. [Jupyter](https://jupyter.org/) is an example of a free notebook you can use.
+To create the corpus first launch *corpus creation and name of journal analysis* notebook. Then to compare corpora you can launch the *poster figures* notebook.
 
 # How to Use the Project
 
@@ -60,7 +61,7 @@ By default, our code is scrapping the whole text for each article. This means th
 
 ![image](https://user-images.githubusercontent.com/60670025/167449184-7e5fcb83-3ba2-4abd-89cb-37e8101f1e49.png)
 
-You also need to remove the ''' ''' and the "line page_text=page.text" if you want the more precise wikicode. Use "#" to comment the line, inactivating it without fully loosing it.
+You also need to remove the ''' ''' and the "line page_text=page‧text" if you want the more precise wikicode. Use "#" to comment the line, inactivating it without fully loosing it.
 
 ![image](https://user-images.githubusercontent.com/60670025/167449226-4967675f-fa0f-42dd-b3cd-967846f0e017.png)
 
