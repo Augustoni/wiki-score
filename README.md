@@ -39,7 +39,8 @@ All can be installed using pip :
 ```
 ## Run the Project
 The project is contained in a .ipynb file which corresponds to a python notebook file. The code is designed to be run using the cells' logic of a notebook. [Jupyter](https://jupyter.org/) is an example of a free notebook you can use.
-To create the corpus first launch *corpus creation and name of journal analysis* notebook. Then to compare corpora you can launch the *poster figures* notebook.
+To create the corpus first launch *corpus creation and name of journal analysis* notebook. Then to compare corpora you can launch the *poster figures* notebook. 
+If you want to have the history on one article using wikicode manually found you can look at the branch history.
 
 # How to Use the Project
 
