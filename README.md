@@ -77,3 +77,6 @@ The code also plots some figures that describe the corpus. The corresponding cel
 # Acknowledgements
 
 A huge thanks to Omer Benjakob, Rona Aviram which method we applied and who guided us throughout this project. For the code part a huge thanks to Leo Blondel and	Jean-Marc Sevin because without them we wouldn't be able to have done this.
+
+# Contact 
+If you are interested by the code and have struggle understanding something don't hesitate to contact us at the mail adress ariane.augustoni@cri-paris.org we will very pleased to answer you.
